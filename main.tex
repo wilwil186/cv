@@ -1,0 +1,246 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Curriculum Vitae Mejorado y Corregido
+%
+% Basado en la plantilla original de:
+% http://www.howtotex.com/
+%
+% Modificado para el CV de Wilson Eduardo Jerez Hernandez.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[paper=a4,fontsize=11pt]{scrartcl} % KOMA-article class
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     % Paquetes de matemáticas
+\usepackage{graphicx}                    % Para incluir imágenes
+\usepackage[svgnames]{xcolor}            % Colores por nombre 'svgnames'
+\usepackage{geometry}                    % Control de márgenes
+  \geometry{left=2cm,right=2cm,top=2.5cm,bottom=2.5cm}
+\usepackage{url}                         % Para enlaces
+\usepackage{enumitem}                    % Para listas personalizadas
+\usepackage{hyperref}                    % Para hipervínculos
+
+\frenchspacing              % Mejor espaciado después de puntos
+\pagestyle{empty}           % Sin número de página / encabezados / pies
+
+%%% Configuración de secciones usando KOMA-Script
+\setkomafont{section}{\usefont{OT1}{phv}{b}{n}\color{MidnightBlue}\Large}
+\setkomafont{sectionentry}{\color{MidnightBlue}}
+\setkomafont{descriptionlabel}{\itshape}
+
+%%% Definición de longitudes y comandos personalizados
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888} % Para alinear texto
+\newcommand{\sepspace}{\vspace*{0.8em}}
+
+\newcommand{\MyName}[1]{ % Nombre grande
+  {\Huge \usefont{OT1}{phv}{b}{n} #1}%
+  \par \normalsize \normalfont}
+
+\newcommand{\MySlogan}[1]{ % Eslogan o subtítulo
+  {\large \usefont{OT1}{phv}{m}{n}\textit{#1}}%
+  \par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\PersonalEntry}[2]{%
+  \noindent\hangindent=2em\hangafter=0 % Sangría
+  \parbox{\spacebox}{\textit{#1}}%
+  \hspace{1.5em} #2 \par}
+
+\newcommand{\SkillsEntry}[2]{%
+  \noindent\hangindent=2em\hangafter=0
+  \parbox{\spacebox}{\textit{#1}}%
+  \hspace{1.5em} #2 \par}
+
+\newcommand{\EducationEntry}[4]{%
+  \noindent \textbf{#1} \hfill \textbf{#2} \par
+  \noindent \textit{#3} \par
+  \noindent \small #4 
+  \normalsize \par \sepspace
+}
+
+\newcommand{\WorkEntry}[4]{%
+  \noindent \textbf{#1} \hfill \textbf{#2} \par
+  \noindent \textit{#3} \par
+  \noindent \small #4 
+  \normalsize \par \sepspace
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Inicio del Documento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%% ------------------------------------------------------------------
+%%% ENCABEZADO
+%%% ------------------------------------------------------------------
+\MyName{Wilson Eduardo Jerez Hernández}
+\MySlogan{B.Sc. in Mathematics | Data Scientist | Financial Analyst}
+
+\sepspace
+
+%%% ------------------------------------------------------------------
+%%% DETALLES DE CONTACTO
+%%% ------------------------------------------------------------------
+\NewPart{Detalles Personales}
+\PersonalEntry{Nacimiento}{11 de Mayo, 2001}\par
+\PersonalEntry{Dirección}{CL 75 \textbackslash 80B-20, Bogotá DC, Colombia}\par
+\PersonalEntry{Teléfono}{+57 300-392-6817}\par
+\PersonalEntry{GitHub}{\href{https://github.com/wilwil186}{github.com/wilwil186}}\par
+\PersonalEntry{Correo}{\href{mailto:edujerezwilson@gmail.com}{edujerezwilson@gmail.com}}\par
+\PersonalEntry{LinkedIn}{\href{https://www.linkedin.com/in/wilson-eduardo-jerez-hern\%C3\%A1ndez-833858206/}{linkedin.com/in/wilson-eduardo-jerez-hernández-833858206}}\par
+
+
+\sepspace
+
+%%% ------------------------------------------------------------------
+%%% PERFIL PROFESIONAL
+%%% ------------------------------------------------------------------
+\NewPart{Perfil Profesional}
+Soy un apasionado de la tecnología y la ciencia de datos, con una sólida formación en matemáticas y experiencia en análisis de datos, modelado y aprendizaje automático. Poseo habilidades en programación y manejo de bases de datos, lo que me permite desarrollar soluciones innovadoras para resolver problemas complejos. Mi enfoque está en la mejora continua y en la aplicación de las últimas tecnologías para aportar valor en proyectos desafiantes. Disfruto del trabajo en equipo y de colaborar en entornos multidisciplinarios para alcanzar objetivos comunes.
+
+\sepspace
+
+%%% ------------------------------------------------------------------
+%%% EXPERIENCIA
+%%% ------------------------------------------------------------------
+\NewPart{Experiencia}
+
+\WorkEntry{Científico de Datos}{jul. 2024 - ene. 2025}{BBVA, Bogotá, Colombia}{%
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item Implementé técnicas de Procesamiento de Lenguaje Natural (NLP) para extraer información valiosa de datos no estructurados.
+    \item Desarrollé scripts de automatización, optimizando procesos de extracción y limpieza de datos.
+    \item Analicé grandes volúmenes de datos utilizando Apache Spark, construyendo modelos de aprendizaje automático para predecir tendencias financieras.
+    \item Diseñé dashboards interactivos con herramientas como Tableau y Power BI para visualizar datos y comunicar hallazgos a stakeholders.
+    \item Colaboré en equipos multidisciplinarios, integrando análisis de datos en estrategias de negocio para mejorar la toma de decisiones.
+\end{itemize}
+}
+
+\WorkEntry{Líder Semillero Iprea}{ago. 2022 - jul. 2024}{Universidad Distrital Francisco José de Caldas, Bogotá, Colombia}{%
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item Dirigí el Semillero Iprea, coordinando actividades de investigación y proyectos aplicados en estadística.
+    \item Guié a los miembros en la aplicación de conceptos estadísticos, desde el análisis de datos hasta la implementación de modelos predictivos.
+    \item Organicé y facilité sesiones de formación y talleres para fortalecer las habilidades técnicas y de trabajo en equipo de los integrantes.
+    \item Lideré proyectos que aplicaron técnicas estadísticas para resolver problemas reales, promoviendo la innovación y la colaboración.
+\end{itemize}
+}
+
+\WorkEntry{Proyectos en GitHub}{2020 - Actual}{Perfil Personal de GitHub}{%
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item Desarrollo de proyectos en Python, R y Go enfocados en análisis de datos, machine learning y desarrollo de software.
+    \item Utilización de Git y GitHub para control de versiones y colaboración en proyectos de código abierto.
+    \item Implementación de algoritmos de aprendizaje automático para la predicción y clasificación de datos.
+    \item Creación de visualizaciones interactivas y dashboards para la presentación de resultados.
+    \item Documentación detallada de cada proyecto para facilitar la comprensión y reutilización por parte de otros desarrolladores.
+\end{itemize}
+}
+
+\sepspace
+
+%%% ------------------------------------------------------------------
+%%% EDUCACIÓN
+%%% ------------------------------------------------------------------
+\NewPart{Educación}
+
+\EducationEntry{B.Sc. in Mathematics}{2019 - Actual}{Universidad Distrital Francisco José de Caldas}{%
+Profundización en cálculo, álgebra, estadística y geometría, aplicando estos conocimientos en la resolución de problemas y modelización matemática. Participación en proyectos de investigación y desarrollo de modelos matemáticos para aplicaciones prácticas.
+}
+
+\sepspace
+
+%%% ------------------------------------------------------------------
+%%% LICENCIAS Y CERTIFICACIONES
+%%% ------------------------------------------------------------------
+\NewPart{Licencias y Certificaciones}
+\begin{itemize}[leftmargin=*, noitemsep]
+  \item \textbf{Financial Analyst} \\
+        \textit{Platzi} \\
+        Expedición: Ene. 2025 
+
+  \item \textbf{Herramientas de AI para Programadores} \\
+        \textit{Platzi} \\
+        Expedición: Dic. 2024 
+
+  \item \textbf{Introducción a AWS: Conceptos de la nube} \\
+        \textit{LinkedIn} \\
+        Expedición: Nov. 2024 \\
+        \textbf{Aptitudes:} Amazon Web Services (AWS) 
+
+  \item \textbf{AWS Cloud Practitioner Essentials} \\
+        \textit{Amazon Web Services (AWS)} \\
+        Expedición: Oct. 2024 
+
+  \item \textbf{Natural Language Processing with Classification and Vector Spaces} \\
+        \textit{DeepLearning.AI} \\
+        Expedición: Oct. 2024 
+
+  \item \textbf{Prompt Engineering: Aprende a hablar con una inteligencia artificial generativa} \\
+        \textit{LinkedIn} \\
+        Expedición: Oct. 2024 \\
+        \textbf{Aptitudes:} Prompt Engineering 
+
+  \item \textbf{Sistemas GNU Linux} \\
+        \textit{Universidad Distrital Francisco José de Caldas} \\
+        Expedición: Sept. 2024 
+
+  \item \textbf{Curso de Portugués para Hispanohablantes} \\
+        \textit{Platzi} \\
+        Expedición: Sept. 2023 
+
+  \item \textbf{Participación en el Primer Congreso Caldas de Matemáticas – CACOMA} \\
+        \textit{Universidad de Caldas} \\
+        Expedición: Ago. 2023
+
+  \item \textbf{Certificado XXIII CCM UPTC - Tunja} \\
+        \textit{Sociedad Colombiana de Matemáticas} \\
+        Expedición: Jun. 2023
+
+  \item \textbf{Escuela de Blockchain y Criptomonedas} \\
+        \textit{Platzi} \\
+        Expedición: Jul. 2021 
+
+  \item \textbf{Ciencias} \\
+        \textit{Platzi} \\
+        Expedición: Mar. 2021 
+\end{itemize}
+
+\sepspace
+
+%%% ------------------------------------------------------------------
+%%% HABILIDADES
+%%% ------------------------------------------------------------------
+\NewPart{Habilidades}
+
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item \textbf{Lenguajes de Programación:} Python, R, Go.
+    \item \textbf{Herramientas y Tecnologías:} Git, GitHub, Apache Spark, Tableau, Power BI.
+    \item \textbf{Análisis de Datos:} Estadística, Machine Learning, Deep Learning, Análisis Exploratorio de Datos, Visualización de Datos.
+    \item \textbf{Ofimática:} Microsoft Office, Google Suite, \LaTeX.
+    \item \textbf{Idiomas:} Español (Nativo), Inglés (Intermedio), Portugués (Intermedio).
+\end{itemize}
+
+\sepspace
+
+%%% ------------------------------------------------------------------
+%%% EVENTOS ACADÉMICOS
+%%% ------------------------------------------------------------------
+\NewPart{Eventos Académicos}
+
+\EducationEntry{XXIII CCM UPTC - Tunja}{2023}{Asistente}{%
+Participación como asistente en el XXIII Congreso Colombiano de Matemáticas organizado por la UPTC en Tunja.
+}
+
+\EducationEntry{Primer Congreso Caldas de Matemáticas (CACOMA)}{2023}{Ponente}{%
+Ofrecí una conferencia titulada \textit{Predicción de criptomonedas con Random Forest} en la Ciudad de Manizales, contribuyendo al fortalecimiento del estudio de las matemáticas en la región.
+}
+
+\EducationEntry{I Semana de Ciencias, Universidad Distrital}{2022}{Cursillista}{%
+Participación en el curso \textit{Una introducción al Aprendizaje de Máquina Asistido con R y Python} durante la I Semana de Ciencias de la Universidad Distrital.
+}
+
+\sepspace
+
+\end{document}
+
